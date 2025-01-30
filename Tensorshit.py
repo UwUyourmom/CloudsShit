@@ -9,7 +9,7 @@ model = keras.Sequential()
 #Definition des Modells
 #Hinzuzfügen eines Input- und Hiddenlayers zum Modell
 model.add(layers.Dense(
-4, #Anzahl der Neuronen
+6, #Anzahl der Neuronen
 input_dim=2, #Definition Eingabedimension mit zwei Neuronen
 activation='sigmoid' #Verwendung Sigmoid-Aktivierungsfunktion
 ))
@@ -36,7 +36,7 @@ def cleanPredict(a, b):
 model.fit(
 X, #Eingabe Trainingsdaten
 Y, #Ausgabe Trainingsdaten
-epochs=20, #Anzahl Lernzyklen
+epochs=4000, #Anzahl Lernzyklen
 verbose=1)
 #Details, die beim Training im Terminal angezeigt werden
 #Ausgabe für einen Eingabewert
