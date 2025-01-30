@@ -1,8 +1,12 @@
 import time
-i = 1
+from time import sleep
+i = 0
 
-
-while i < 120:
-        print("Boy smell >-<")
-        i=+1
-print('u horny fuck')
+username = input("Enter username:")
+repeat = int(input('How often should i tell u?(please only int :3):'))
+while i < repeat:
+        print('U are so gay', username, '!')
+        i = i + 1
+        print(i)
+        sleep(0.5)
+print('u gay fuck')
