@@ -3,7 +3,7 @@ from time import sleep
 from random import randint
 i = 0
 username = input("Enter username:")
-Shit = [f'U are so gay {username} !', f'u are a faggot {username}', ]
+Shit = [f'U are so gay {username} !', f'u are a faggot {username}', f' U are a bitch {username}', f'Fuck u {username}', f'Kill urself {username}']
 repeat = int(input('How often should i tell u?(please only int :3):'))
 while i < repeat:
         print(Shit[randint(0,len(Shit)-1)])
