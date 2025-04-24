@@ -26,8 +26,10 @@ for i in range(repeat):
     print(Shit[randint(0, len(Shit) - 1)])
     sleep(0.5)
 print(
-    "Thanks for using clouds software, if u have any questions regarding this product, please use githubs issues"
+    "Thanks for using clouds software, if u have any questions regarding this product, please use the following input"
 )
+comment = input("comment here:    ")
+print("leck Eier")
 
 
 # v, , fucker, motherfucker, pussy,
