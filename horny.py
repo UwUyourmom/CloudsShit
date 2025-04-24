@@ -19,12 +19,15 @@ Shit = [
     "fuckwad",
     f"U are a lunatic, {username}",
     "U sheepfucker",
+    "u gay fuck",
 ]
 repeat = int(input("How often should i tell u?(please only int :3):"))
 for i in range(repeat):
     print(Shit[randint(0, len(Shit) - 1)])
     sleep(0.5)
-print("u gay fuck")
+print(
+    "Thanks for using clouds software, if u have any questions regarding this product, please use githubs issues"
+)
 
 
 # v, , fucker, motherfucker, pussy,
