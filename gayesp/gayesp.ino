@@ -5,6 +5,7 @@ char* Name[] = {"C","l","o","u","d","H","a","x","k","o",".","S","p","a","c","e"}
 #define SCL 14 //Define SCL pins
 LiquidCrystal_I2C lcd(0x27,16,2);
 
+
 void setup() {
 
    Serial.begin(115200);
@@ -39,6 +40,7 @@ void loop() {
   }
   delay(1000);
   lcd.clear();
+
 
 }
 bool i2CAddrTest(uint8_t addr) {
