@@ -9,7 +9,6 @@ String readString;
 void setup() {
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT); 
-  Serial.println("serial on/off test 0021"); // so I can keep track
    Wire.begin(SDA, SCL); // attach the IIC pin 
   if (!(i2CAddrTest(0x27))) {
     lcd = LiquidCrystal_I2C(0x3F, 16, 2);
@@ -32,16 +31,32 @@ void loop() {
     if (readString == "on"){
       lcd.clear();
       Serial.println("switching on");
+      Serial.println(readString);
       digitalWrite(ledPin, HIGH);
       lcd.print("ON");
     }
+    else{
     if (readString == "off")
     {
       lcd.clear();
       Serial.println("switching off");
+      Serial.println(readString);
       digitalWrite(ledPin, LOW);
       lcd.print("OFF");
     }
+    else{
+    if (readString == "test"){
+      lcd.clear();
+      Serial.println("Good");
+      Serial.println(readString);
+      lcd.print("Good!");
+    }
+    else{
+      lcd.clear();
+      Serial.println("Wtf Bro -->:");
+      Serial.println(readString);
+      lcd.print("Wtf Bro :<");
+    }}}
 
     readString="";
   } 
